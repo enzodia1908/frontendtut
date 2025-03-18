@@ -18,11 +18,11 @@ export const MovieProvider = ({ children }) => {
     }, [favourites]);
 
     const addToFavourites = (movie) => {
-        setFavourites((prev) => [...prev, movie]);
+        setFavourites(prev => [...prev, movie]);
     };
 
     const removeFromFavourites = (movieId) => {
-        setFavourites((prev) => prev.filter((movie) => movie.id !== movieId));
+        setFavourites(prev => prev.filter((movie) => movie.id !== movieId));
     };
 
     const isFavourite = (movieId) => {
